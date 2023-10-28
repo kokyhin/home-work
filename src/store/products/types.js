@@ -1,0 +1,4 @@
+export const GET_PRODUCTS = 'GET_PRODUCTS';
+export const GET_PRODUCTS_CATEGORIES = 'GET_PRODUCTS_CATEGORIES';
+export const GET_PRODUCT = 'GET_PRODUCT';
+export const SEARCH = 'SEARCH';
