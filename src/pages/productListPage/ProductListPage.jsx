@@ -8,6 +8,7 @@ import Preloader from 'src/components/Preloader';
 import ProducrsFilter from 'src/components/ProductsFilter';
 import { getProducts } from 'src/store/products/productActions';
 import Portal from 'src/hooks/usePortal';
+import EmptyProducts from './component/EmptyProducts';
 import * as S from './productList.style';
 
 function ProductListPage() {
@@ -41,6 +42,7 @@ function ProductListPage() {
           <ProductTile data={product} key={product.id} />
         ))}
       </S.ProductsContainer>
+      {!data.length && <EmptyProducts />}
       <Portal to="main-footer">
         <Box pad="small" align="center">
           <Pagination
